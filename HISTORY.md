@@ -1,3 +1,10 @@
+# 3.16.0 (2017-01-18)
+  * Allow configuration of webpack dev server via devServer stanza of webpack config.
+
+# 3.15.1 (2017-01-18)
+  * Reload page when module cannot hot reload
+
+  
 # 3.15.0 (2016-08-25)
 
   * Replace the custom `deepmerge` package via git with `deepmerge-alt`
