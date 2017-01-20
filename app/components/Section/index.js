@@ -25,7 +25,7 @@ export default class Section extends Component {
     // React element class used for rendering additional examples
     exampleComponent: PropTypes.func,
     // Examples config. TODO consider moving all example config in here.
-    exampleOpts: PropTypes.shape({
+    defaultTabOpts: PropTypes.shape({
       firstTabName: PropTypes.string
     }),
     // Reference to the example component
@@ -37,7 +37,7 @@ export default class Section extends Component {
   static defaultProps () {
     return {
       examples: [],
-      exampleOpts: {}
+      defaultTabOpts: {}
     }
   }
 
@@ -132,7 +132,7 @@ export default class Section extends Component {
 
     // Renders the base example using the styleguide block
     if (this.props.children) {
-      const firstTabName = this.props.exampleOpts && this.props.exampleOpts.firstTabName || 'Example'
+      const firstTabName = this.props.defaultTabOpts && this.props.defaultTabOpts.firstTabName || 'Example'
       examples.push(
         <Tabs.Panel key={'tab-panel-' + exampleId} title={firstTabName}>
           <div className='sg-section-example-body'>
