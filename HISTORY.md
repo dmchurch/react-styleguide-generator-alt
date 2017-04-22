@@ -1,3 +1,6 @@
+# UNRELEASED
+  * Sort indexes numerically rather than lexicologically
+
 # 3.16.0 (2017-01-18)
   * Allow configuration of webpack dev server via devServer stanza of webpack config.
 
