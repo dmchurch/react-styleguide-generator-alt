@@ -5,7 +5,7 @@ const BUTTONS = ['Default', 'Primary', 'Success', 'Info', 'Warning', 'Danger', '
 
 export default class extends Component {
   static styleguide = {
-    index: '1.3',
+    index: '1.10',
     category: 'Buttons',
     title: 'Button dropdowns',
     description: 'Use `<DropdownButton />` or `<SplitButton />` components to display a button with a dropdown menu.',
