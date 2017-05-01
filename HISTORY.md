@@ -1,6 +1,9 @@
+# 3.17.1 (2017-04-30)
+  * Add documentation on `defaultTabOpts`
+
 # 3.17.0 (2017-04-30)
   * Sort indexes numerically rather than lexicologically
-  * Added an exampleOpts prop with firstTabName to configure the name of the first example tab
+  * Added an `defaultTabOpts` prop with `firstTabName` to configure the name of the first example tab
 
 # 3.16.0 (2017-01-18)
   * Allow configuration of webpack dev server via devServer stanza of webpack config.

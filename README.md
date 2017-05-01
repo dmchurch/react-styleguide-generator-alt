@@ -95,6 +95,10 @@ export default class extends React.Component {
     …
     // Component to use for generating additional examples
     exampleComponent: Button,
+    // Options for the first tab
+    defaultTabOpts: {
+        firstTabName: 'Default example'
+    },
     // Array of additional example tabs
     examples: [{
       tabTitle: 'Default',
