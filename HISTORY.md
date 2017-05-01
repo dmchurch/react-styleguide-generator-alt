@@ -1,3 +1,6 @@
+# UNRELEASED
+  * Added an exampleOpts prop with firstTabName to configure the name of the first example tab
+  
 # 3.16.0 (2017-01-18)
   * Allow configuration of webpack dev server via devServer stanza of webpack config.
 
