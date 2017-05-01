@@ -1,4 +1,4 @@
-# UNRELEASED
+# 3.17.0 (2017-04-30)
   * Sort indexes numerically rather than lexicologically
   * Added an exampleOpts prop with firstTabName to configure the name of the first example tab
 
