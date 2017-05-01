@@ -12,12 +12,27 @@ let Contents = Components
     var ai = a.styleguide.index
     var bi = b.styleguide.index
 
-    if (!isNaN(parseFloat(ai)) && !isNaN(parseFloat(bi))) {
-      return parseFloat(ai) - parseFloat(bi)
+    var res = cmpIndexes(ai, bi)
+    if (!isNaN(res)) {
+      return res
     } else {
       return !ai && !bi ? 0 : !ai ? 1 : !bi ? -1 : ai.toString().localeCompare(bi)
     }
   })
+
+function cmpIndexes(a, b) {
+  let len, tmp, i
+  a = a.split('.')
+  b = b.split('.')
+  len = Math.min(a.length, b.length)
+  for (i = 0; i < len; i++) {
+    tmp = parseFloat(a[i]) - parseFloat(b[i])
+      if (tmp !== 0) {
+        return tmp
+      }
+    }
+    return a.length - b.length
+}
 
 export default {
   /**
