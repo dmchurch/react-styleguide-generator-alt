@@ -1,3 +1,5 @@
+**1/13/2018 - This project is now in maintenance mode. No new features will be accepted. I recommend the [react-storybook](https://storybook.js.org/) project instead.**
+
 # React Styleguide Generator (Alt!)
 
 [![npm](https://img.shields.io/npm/v/rsg-alt.svg)](https://npmjs.org/package/rsg-alt)
